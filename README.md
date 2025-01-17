@@ -1,5 +1,6 @@
 # RUN
 
-่javac *.java
+
+javac *.java
 
 java TaxCalculatorMain
