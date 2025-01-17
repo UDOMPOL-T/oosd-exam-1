@@ -1,13 +1,14 @@
 public abstract class TaxCalculator
 {
-    private int price_to_pay;
+    private int Excluding_Value_Added_Tax;
     
-    protected abstract void calculateTax();
+    protected abstract double calculateTax();
 
-    public int getPrice_to_pay() {
-        return price_to_pay;
+    public void setExcluding_Value_Added_Tax(int price_to_pay) {
+        this.Excluding_Value_Added_Tax = price_to_pay;
     }
-    public void setPrice_to_pay(int price_to_pay) {
-        this.price_to_pay = price_to_pay;
+
+    public int getExcluding_Value_Added_Tax() {
+        return Excluding_Value_Added_Tax;
     }
 }

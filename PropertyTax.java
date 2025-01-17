@@ -1,13 +1,13 @@
 public class PropertyTax extends TaxCalculator
 {
     public PropertyTax(int i) {
-        super.setPrice_to_pay(i);
+        super.setExcluding_Value_Added_Tax(i);
     }
 
     @Override
-    protected void calculateTax()
+    protected double calculateTax()
     {
-        System.out.println(5);
+        return (double) this.getExcluding_Value_Added_Tax() * (20 / 100.0);
     }
 }
 

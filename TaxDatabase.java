@@ -63,8 +63,10 @@ class TaxDatabase {
     public void listTaxpayers() {
         System.out.println("List of Taxpayers:");
         for (Taxpayer taxpayer : taxpayers) {
-            System.out.println(taxpayer.getFirstName() + " " + taxpayer.getLastName());
+            System.out.println("_________________________________________");
+            System.out.println("|= " + taxpayer.getFirstName() + " " + taxpayer.getLastName());
             taxpayer.ListTaxes();
+            System.out.println("_________________________________________");
             
         }
     }

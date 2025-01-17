@@ -9,7 +9,7 @@ public class Taxpayer {
     public Taxpayer(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.taxes = new ArrayList<TaxCalculator>(0);
+        this.taxes = new ArrayList<>(0);
     }
 
     void addTax(LuxuryTax luxuryTax) {
@@ -51,7 +51,7 @@ public class Taxpayer {
     {
         for ( TaxCalculator tax : this.taxes) {
             System.out.println("|--> " + tax);
-            System.out.println("   \t| Need to pay ---> " + tax.getPrice_to_pay());
+            System.out.println("   \t| Need to pay ---> " + tax.calculateTax());
         }
     }
 }
